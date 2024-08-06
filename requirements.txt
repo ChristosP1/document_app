@@ -20,8 +20,6 @@ certifi==2024.7.4
 cffi==1.16.0
 chardet==5.2.0
 charset-normalizer==3.3.2
-chroma-hnswlib==0.7.5
-chromadb==0.5.4
 click==8.1.7
 colorama==0.4.6
 coloredlogs==15.0.1
@@ -42,7 +40,7 @@ exceptiongroup==1.2.2
 executing==2.0.1
 faiss-cpu==1.8.0.post1
 fastapi==0.110.3
-fastapi-cli==0.0.4
+fastapi-cli
 filelock==3.15.4
 flatbuffers==24.3.25
 frozenlist==1.4.1
