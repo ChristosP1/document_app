@@ -187,7 +187,6 @@ def process_files_for_summarization(uploader_files, llm, output_parser):
 
 def main():
     openai_api_key = st.secrets["OPENAI_API_KEY"]
-    st.write(openai_api_key)
 
     st.title("Document Processing App")
     st.write("This app processes uploaded PDFs to generate a quiz or a summary.")
