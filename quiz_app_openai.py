@@ -29,7 +29,7 @@ from langchain.prompts import PromptTemplate
 
 #----------------------------------------------
 load_dotenv()  # Load environment variables from .env file
-openai_api_key = os.getenv("OPENAI_API_TOKEN")
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 if openai_api_key is None:
     st.error("API key not found. Please set the OPENAI_API_KEY environment variable.")
@@ -188,7 +188,7 @@ def process_files_for_summarization(uploader_files, llm, output_parser):
 
 def main():
     load_dotenv()  # Load environment variables from .env file
-    openai_api_key = os.getenv("OPENAI_API_TOKEN")
+    openai_api_key = os.getenv("OPENAI_API_KEY")
 
     st.title("Document Processing App")
     st.write("This app processes uploaded PDFs to generate a quiz or a summary.")
