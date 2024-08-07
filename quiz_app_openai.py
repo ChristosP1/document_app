@@ -28,7 +28,12 @@ from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
 #----------------------------------------------
-    
+load_dotenv()  # Load environment variables from .env file
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+if openai_api_key is None:
+    st.error("API key not found. Please set the OPENAI_API_KEY environment variable.")
+    st.stop()
 
 def generate_quiz_chain(prompt_template, llm, output_parser):
     chain = prompt_template | llm | output_parser
