@@ -187,7 +187,7 @@ def process_files_for_summarization(uploader_files, llm, output_parser):
 
 
 def main():
-    load_dotenv()
+    load_dotenv()  # Load environment variables from .env file
     openai_api_key = os.getenv("OPENAI_API_TOKEN")
 
     st.title("Document Processing App")
