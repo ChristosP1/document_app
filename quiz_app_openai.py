@@ -36,7 +36,6 @@ if openai_api_key is None:
     st.stop()
 else:
     st.write("API key loaded successfully")
-    st.write(openai_api_key)
 
 def generate_quiz_chain(prompt_template, llm, output_parser):
     chain = prompt_template | llm | output_parser
