@@ -34,6 +34,9 @@ openai_api_key = os.getenv("OPENAI_API_TOKEN")
 if openai_api_key is None:
     st.error("API key not found. Please set the OPENAI_API_KEY environment variable.")
     st.stop()
+else:
+    st.write("API key loaded successfully")
+    st.write(openai_api_key)
 
 def generate_quiz_chain(prompt_template, llm, output_parser):
     chain = prompt_template | llm | output_parser
