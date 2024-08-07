@@ -29,7 +29,7 @@ from langchain.prompts import PromptTemplate
 
 #----------------------------------------------
 load_dotenv()  # Load environment variables from .env file
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_TOKEN")
 
 if openai_api_key is None:
     st.error("API key not found. Please set the OPENAI_API_KEY environment variable.")
